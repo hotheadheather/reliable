@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<style>
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+    .title {
+        color: grey;
+    }
+</style>
+
+
+<br />
+
+
+<div class="jumbotron">
+    <center><img src="../static/images/logo/reliable.jpg" alt="rs" style="width:20%"></center>
+</div>
+
+<body>
+
+    <div class="column">
+        <div class="card">
+            <div class="container">
+
+                <p class="title"></p>
+                <img src="../static/images/events/belly.jpg" alt="fire" style="width:100%">
+                <img src="../static/images/events/cream.jpg" alt="fire" style="width:100%">
+                <img src="../static/images/events/flow.jpg" alt="fire" style="width:100%">
+                <img src="../static/images/events/king.jpg" alt="fire" style="width:100%">
+                <img src="../static/images/events/makeover.jpg" alt="fire" style="width:100%">
+                <img src="../static/images/events/nightmares.jpg" alt="fire" style="width:100%">
+
+                <div class="container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <img src="../static/images/events/paint.jpg" alt="fire" style="width:100%">
+                <img src="../static/images/events/poetry.jpg" alt="fire" style="width:100%">
+                <img src="../static/images/events/pop.jpg" alt="fire" style="width:100%">
+
+                <div class="container">
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+
+    {% endblock %}

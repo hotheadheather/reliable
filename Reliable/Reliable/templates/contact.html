@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<style>
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+    .title {
+        color: grey;
+    }
+</style>
+
+
+<br />
+
+
+<div class="jumbotron">
+
+    <center>
+        <img src="../static/images/doboyportrait.jpg" alt="rs" style="width:100%">
+        <br />
+        <br />
+
+        <a class="btn btn-default" href=" http://www.reliablestreet.com/">reliablestreet.com &raquo;</a>
+    </center>
+
+
+</div>
+
+
+<div class="column">
+    <div class="card">
+        <div class="container">
+
+            <p class="title"></p>
+            <p>
+                Mon - Closed <br />
+                Tue - 8:00 AM - 3:00 PM <br />
+                Wed - 8:00 AM - 3:00 PM <br />
+                Thu - 8:00 AM - 3:00 PM <br />
+                Fri - 8:00 AM - 3:00 PM <br />
+                Sat - 8:00 AM - 3:00 PM <br />
+                Sun - 8:00 AM - 3:00 PM <br />
+                <br />
+                4625 Reliable St
+                Ames, IA 50014
+                (415) 261-7001
+            </p>
+          
+
+
+            <div class="container">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="card">
+        <div class="container">
+            <img src="../static/images/wonderful.jpg" alt="nicenote" style="width:100%">
+           
+
+            <div class="container">
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    {% endblock %}
